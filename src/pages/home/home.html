@@ -7,8 +7,11 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-item>
+    <span> the flash is:{{isOn ?'on':'off'}}</span>
+  
+  <button ion-button  (tap)="switchon()">Switch On</button>
+<button ion-button (tap)="switchoff()">Switch Off</button>
+<button ion-button (tap)="toggle()">Toggle</button>
+</ion-item>
 </ion-content>
